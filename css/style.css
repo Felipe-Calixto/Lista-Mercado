@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(0, 170, 255);
+    border: 2px solid rgb(0, 170, 255);
+    font-size: 1rem;
+    padding: .3rem .6rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    transition: .3s;
+    background-color: rgb(0, 170, 255);
+    color: white; 
+}
+
+button i {
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    border: 1px solid rgb(0, 170, 255);
+    border-radius: 5px;
+}
+
+#conteiner {
+    width: 450px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 150px auto;
+}
+
+#tittle {
+    text-align: center;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+#add-form, #edit-form {
+    padding: 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+#add-form p, #edit-form p{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.inputs-conteiner {
+    display: flex;
+}
+
+.inputs-conteiner input{
+    margin-right: 5px;
+}
+
+#btn-cancel-edit {
+    margin-top: 10px;
+}
+
+#tools-conteiner {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+#search-conteiner h4, #filter-conteiner h4{
+    margin-bottom: 5px;
+}
+
+#search-form {
+    display: flex;
+    margin-right: 5px;
+}
+
+#search-conteiner {
+    border-right: 1px solid rgb(220, 220, 220);
+    width: 75%;
+}
+
+#search-form input {
+    margin-right: 5px;
+}
+
+#filter-conteiner {
+    margin-left: 10px;
+}
+
+.list-box {
+    display: flex;
+    padding: 5px;
+    border: 1px solid rgb(0, 170, 255);
+    margin-top: 10px;
+}
+
+.item-box {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgb(0, 170, 255);
+    margin-left: 10px;
+    width: 65%;
+    font-weight: bold;
+}
+
+.bnt-list {
+    display: flex;
+    margin-left: 10px;
+}
+
+.bnt-list button {
+    margin-left: 5px;
+}
+
+.done { 
+    border: 1px solid green;
+    color: green;
+}
+
+.done p{
+    text-decoration: line-through;
+}
+

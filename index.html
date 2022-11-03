@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="conteiner">
+        <h1 id="tittle">Lista Mercado</h1>
+        <form id="add-form">
+            <p>Adicione o item:</p>
+            <div class="inputs-conteiner">
+                <input type="text" placeholder="Produto" id="add-input">
+                <button id="add-bnt"><i class="fa-thin fa-plus"></i></button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite o item:</p>
+            <div class="inputs-conteiner">
+                <input type="text">
+                <button><i class="fa-solid fa-check-double"></i></button>
+            </div>
+            <button id="btn-cancel-edit">Cancelar</button>
+        </form>
+        <div id="tools-conteiner">
+            <div id="search-conteiner">
+                <h4>Pesquisar:</h4>
+                <form id="search-form">
+                    <input type="text" placeholder="buscar">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div id="filter-conteiner">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="all">Comprados</option>
+                    <option value="all">Não comprados</option>
+                </select>
+            </div>
+        </div>
+        <div id="list-conteiner">
+            <div class="list-box done">
+                <div class="item-box">
+                    <p>Estrato de tomate</p>
+                </div>
+                <div class="bnt-list">
+                    <button><i class="fa-solid fa-check"></i></button>
+                    <button><i class="fa-solid fa-edit"></i></button>
+                    <button><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="list-box">
+                <div class="item-box">
+                    <p>10 batatas</p>
+                </div>
+                <div class="bnt-list">
+                    <button><i class="fa-solid fa-check"></i></button>
+                    <button><i class="fa-solid fa-edit"></i></button>
+                    <button><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
