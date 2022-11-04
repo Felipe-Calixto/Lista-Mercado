@@ -22,8 +22,8 @@
         <form id="edit-form" class="hide">
             <p>Edite o item:</p>
             <div class="inputs-conteiner">
-                <input type="text">
-                <button><i class="fa-solid fa-check-double"></i></button>
+                <input type="text" id="edit-input">
+                <button id="btn-add-edit"><i class="fa-solid fa-check-double"></i></button>
             </div>
             <button id="btn-cancel-edit">Cancelar</button>
         </form>
@@ -39,32 +39,13 @@
                 <h4>Filtrar:</h4>
                 <select id="filter-select">
                     <option value="all">Todos</option>
-                    <option value="all">Comprados</option>
-                    <option value="all">Não comprados</option>
+                    <option value="comprados">Comprados</option>
+                    <option value="nao-comprados">Não comprados</option>
                 </select>
             </div>
         </div>
         <div id="list-conteiner">
-            <div class="list-box done">
-                <div class="item-box">
-                    <p>Estrato de tomate</p>
-                </div>
-                <div class="bnt-list">
-                    <button><i class="fa-solid fa-check"></i></button>
-                    <button><i class="fa-solid fa-edit"></i></button>
-                    <button><i class="fa-solid fa-xmark"></i></button>
-                </div>
-            </div>
-            <div class="list-box">
-                <div class="item-box">
-                    <p>10 batatas</p>
-                </div>
-                <div class="bnt-list">
-                    <button><i class="fa-solid fa-check"></i></button>
-                    <button><i class="fa-solid fa-edit"></i></button>
-                    <button><i class="fa-solid fa-xmark"></i></button>
-                </div>
-            </div>
+           
         </div>
     </div>
 
